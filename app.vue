@@ -1,10 +1,9 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <NuxtPage />
     {{ title }}
   </div>
 </template>
 <script lang="ts" setup>
-
-const title: string = "test";
+const title: string = 'test';
 </script>

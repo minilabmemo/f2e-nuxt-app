@@ -1,3 +1,15 @@
+# f2e-nuxt-app
+
+這是一個用 nuxt3 建立的學習練習場。
+
+## Note
+
+- [nuxt3 個人學習筆記](https://hackmd.io/gAFgp8TdRyqzVM_EzFlmOA?both)
+
+---
+
+# 專案建立資訊
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
