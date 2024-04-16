@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   typescript: {
-    typeCheck: true,
+    typeCheck: true
   },
+  runtimeConfig: {
+    public: {
+      googleClientId: '518652066543-r8bq02r657e8jecoimpafelr7j48l2in.apps.googleusercontent.com'
+    }
+  }
 });
