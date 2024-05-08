@@ -3,8 +3,8 @@
     <div class="flex flex-col items-center">
       <p class="my-8 text-3xl text-gray-600">這裡是 /about</p>
       <!-- NOTE: AppWelcome vs LazyAppWelcome 差異 -->
-      <!-- <input id="show-button" v-model="show" name="show-button" type="checkbox" class="h-5 w-5" />
-      <label for="show-button" class="ml-2 block text-base text-slate-800">顯示按鈕</label> -->
+      <input id="show-button" v-model="show" name="show-button" type="checkbox" class="h-5 w-5" />
+      <label for="show-button" class="ml-2 block text-base text-slate-800">顯示按鈕</label>
       <!-- <AppWelcome v-if="show" /> -->
       <!-- <LazyAppWelcome v-if="show" /> -->
 
@@ -21,10 +21,13 @@
       <AppClient />
       <!-- NOTE: 使用 AppClientServer.client.vue 與 AppClientServer.server.vue 差異 -->
       <AppClientServer />
+
+      {{ data }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const show = ref(false);
+const { data } = await useFetch('/api/hello');
 </script>
