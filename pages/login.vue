@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white py-24">
-    <div class="flex flex-col items-center">
-      <h1 class="text-6xl font-semibold text-gray-800">這裡是登入頁面</h1>
+  <div class="bg-bl bg-white py-24">
+    <div class="flex flex-col items-start">
+      <h1 class="text-xl font-semibold text-gray-800">這裡是登入頁面</h1>
       <h4>利用 GoogleLogin 觸發 callback</h4>
       <div class="">拿到 credential</div>
       <ClientOnly>
@@ -20,25 +20,49 @@
       <hr />
       <h4>利用自訂的事件觸發</h4>
       <div class="">使用 Google 繼續 [拿到 Access Token]</div>
-      <button type="button" @click="handleGoogleLogin">使用 Google 繼續</button>
+      <button
+        type="button"
+        class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+        @click="handleGoogleLogin"
+      >
+        使用 Google 繼續
+      </button>
       <div class="">使用 Google 繼續 [拿到 Auth Code]</div>
-      <button type="button" @click="handleGoogleAuthCodeLogin">使用 Google 繼續 [auth]</button>
+      <button
+        class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+        type="button"
+        @click="handleGoogleAuthCodeLogin"
+      >
+        使用 Google 繼續 [auth]
+      </button>
       <hr />
       <div class="">使用 Google 繼續 驗證 Access Token 並取得使用者資訊</div>
-      <button type="button" @click="handleGoogleLoginAndGetInfo">使用 Google 繼續</button>
-      <div>可以使用其他方式取的 ＴＢＤ</div>
+      <button
+        type="button"
+        class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+        @click="handleGoogleLoginAndGetInfo"
+      >
+        使用 Google 繼續
+      </button>
+      <div>可以使用其他方式取的 TBD</div>
       <hr />
       <h4>登出</h4>
-      <button type="button" @click="Logout">登出</button>
+      <button
+        type="button"
+        class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+        @click="Logout"
+      >
+        登出
+      </button>
       <div>使用者資訊：{{ userInfo }}</div>
     </div>
   </div>
 </template>
 <script setup>
-import {googleAuthCodeLogin, googleLogout, googleTokenLogin} from 'vue3-google-login';
+import { googleAuthCodeLogin, googleLogout, googleTokenLogin } from 'vue3-google-login';
 const runtimeConfig = useRuntimeConfig();
 
-const {googleClientId: GOOGLE_CLIENT_ID} = runtimeConfig.public;
+const { googleClientId: GOOGLE_CLIENT_ID } = runtimeConfig.public;
 
 const callback = (response) => {
   console.log(response);
@@ -78,7 +102,7 @@ const handleGoogleLoginAndGetInfo = async () => {
     return '登入失敗';
   }
 
-  const {data} = await useFetch('/api/auth/google', {
+  const { data } = await useFetch('/api/auth/google', {
     method: 'POST',
     body: {
       accessToken
