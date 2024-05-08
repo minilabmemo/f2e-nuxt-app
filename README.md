@@ -1,10 +1,12 @@
 # f2e-nuxt-app
 
-這是一個用 nuxt3 建立的學習練習場。
+這是一個用 nuxt3 +tailwind CSS 建立的學習練習場。
 
 ## Note
 
-- [nuxt3 個人學習筆記](https://hackmd.io/gAFgp8TdRyqzVM_EzFlmOA?both)
+學習參考筆記來源：
+
+- [2022-nuxt3 個人學習筆記](https://hackmd.io/gAFgp8TdRyqzVM_EzFlmOA?both)
 
 ---
 
@@ -90,3 +92,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 - ESlint for auto lint
 - Prettier
+- Tailwind CSS IntelliSense
