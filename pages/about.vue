@@ -1,5 +1,8 @@
 <template>
   <div class="bg-blue py-24">
+    <header class="flex flex-col items-center">
+      <NuxtLink class="text-cyan-400" to="/fetch">前往 fetch</NuxtLink>
+    </header>
     <div class="flex flex-col items-center">
       <p class="my-8 text-3xl text-gray-600">這裡是 /about</p>
       <!-- NOTE: AppWelcome vs LazyAppWelcome 差異 -->
@@ -21,13 +24,10 @@
       <AppClient />
       <!-- NOTE: 使用 AppClientServer.client.vue 與 AppClientServer.server.vue 差異 -->
       <AppClientServer />
-
-      {{ data }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const show = ref(false);
-const { data } = await useFetch('/api/hello');
 </script>
