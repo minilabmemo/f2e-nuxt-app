@@ -6,6 +6,8 @@
       <NuxtLink to="/fetch">前往 fetch</NuxtLink>
 
       <NuxtLink to="/login">前往 登入頁</NuxtLink>
+      <NuxtLink to="/store">前往 store</NuxtLink>
+      <NuxtLink to="/store2">前往 store2</NuxtLink>
     </div>
   </div>
 </template>
