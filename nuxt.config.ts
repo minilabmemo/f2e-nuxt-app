@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   runtimeConfig: {
+    jwtSignSecret: 'testjwtSignSecret',
     public: {
       googleClientId: '518652066543-r8bq02r657e8jecoimpafelr7j48l2in.apps.googleusercontent.com'
     }
