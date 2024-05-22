@@ -42,6 +42,7 @@ export default defineEventHandler(async (event) => {
     .catch(() => null);
 
   oauth2Client.revokeCredentials();
+  console.log('googel post log');
 
   if (!userInfo) {
     throw createError({
