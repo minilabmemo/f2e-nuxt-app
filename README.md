@@ -4,9 +4,9 @@
 
 ## Note
 
-學習參考筆記來源：
+學習筆記記錄：
 
-- [2022-nuxt3 個人學習筆記](https://hackmd.io/gAFgp8TdRyqzVM_EzFlmOA?both)
+- [2024-nuxt3 個人學習筆記](https://hackmd.io/gAFgp8TdRyqzVM_EzFlmOA?both)
 
 ---
 
