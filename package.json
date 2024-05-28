@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "build:cloudflare": "NITRO_PRESET=cloudflare npm run build",
     "dev": "nuxt dev",
     "dev:https": "nuxt dev --https",
+    "dev:wrangler": "npx wrangler dev .output/server/index.mjs --site .output/public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
