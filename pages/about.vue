@@ -12,18 +12,26 @@
       <!-- <LazyAppWelcome v-if="show" /> -->
 
       <!-- NOTE: AppWelcome vs ClientOnly 差異 -->
-      <AppWelcome />
-      <ClientOnly>
+      <div class="flex">
         <AppWelcome />
-        <template #fallback>
-          <p class="my-6 flex justify-center">載入中...</p>
-        </template>
-      </ClientOnly>
+        <ClientOnly>
+          <AppWelcome />
+          <template #fallback>
+            <p class="my-6 flex justify-center">載入中...</p>
+          </template>
+        </ClientOnly>
 
-      <!-- NOTE: 使用 AppClient.client.vue 差異 -->
-      <AppClient />
-      <!-- NOTE: 使用 AppClientServer.client.vue 與 AppClientServer.server.vue 差異 -->
-      <AppClientServer />
+        <!-- NOTE: 使用 AppClient.client.vue 差異 -->
+        <AppClient />
+        <!-- NOTE: 使用 AppClientServer.client.vue 與 AppClientServer.server.vue 差異 -->
+        <AppClientServer />
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <h3>圖片</h3>
+      <div><NuxtImg src="/images/tailwind.png" width="100" /></div>
+      <div><NuxtImg src="/tw.png" /></div>
     </div>
   </div>
 </template>
