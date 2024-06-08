@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/image'],
   image: {
+    format: ['webp, png, jpg'], // default is ['webp']
     dir: 'assets/images'
   },
   devtools: { enabled: true },

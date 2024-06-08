@@ -28,10 +28,26 @@
       </div>
     </div>
 
-    <div class="flex justify-center">
+    <div class="flex flex-col items-center bg-red-100">
       <h3>圖片</h3>
-      <div><NuxtImg src="/images/tailwind.png" width="100" /></div>
-      <div><NuxtImg src="/tw.png" /></div>
+      <div class="flex">
+        <div class="">
+          <h4>NuxtImg public</h4>
+          <div>more.svg<NuxtImg src="/images/more.svg" width="100" /></div>
+          <div>tailwind.png<NuxtImg src="/images/tailwind.png" width="100" /></div>
+        </div>
+        <div class="">
+          <h4>NuxtImg assets</h4>
+
+          <div>/tw.png <NuxtImg src="/tw.png" width="100" /></div>
+          <div>/more.svg<NuxtImg src="/more.svg" width="100" /></div>
+        </div>
+        <div class="">
+          <h4>img assets</h4>
+          <div>/tw.png <img src="/assets/images/tw.png" width="100" /></div>
+          <div>/more.svg<img src="/assets/images/more.svg" width="100" /></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
