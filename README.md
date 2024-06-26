@@ -1,6 +1,6 @@
 # f2e-nuxt-app
 
-這是一個用 nuxt3 +tailwind CSS 建立的學習練習場。
+這是一個用 nuxt3 + tailwind CSS 建立的學習練習場。
 
 ## Note
 
